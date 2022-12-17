@@ -1,0 +1,43 @@
+Keil Barracliffe and Jeffrey Ackah
+
+HEAP SORT
+This implementation of heap sort takes in an ArrayList of integers as a parameter and sorts it in ascending order. It does this by first building a max heap from the list, and then repeatedly extracting the maximum element from the heap and adding it to the end of the list, reducing the size of the heap and heapifying the remaining elements until all elements have been extracted from the heap and added to the list.
+To build the heap, the heapify() method is called recursively on the list starting from the last non-leaf node and working towards the root. This method compares the root with its children and swaps them if the root is smaller than one of its children, and then calls itself on the sublist rooted at the child that was swapped with the root. This process continues until the heap property is satisfied for all nodes in the list.
+This sort Algorithm was one of the fastest among the rest.
+The big O notation of this code is O(n log n) as it has a loop that iterates over the entire list, and another loop that performs a logarithmic operation on each iteration.
+I guess this is one of the reasons for it's Quickness.
+
+
+
+SELECTIONSORT
+This implementation of selection sort takes in an ArrayList of integers as a parameter and sorts it in ascending order. It does this by iterating over the list, starting from the first element, and finding the minimum value in the sublist to the right of the current element. It then swaps the minimum value with the current element, and repeats this process for each element in the list.
+To do this, the sort() method uses a nested for loop. The outer loop iterates over the list, and the inner loop finds the index of the minimum value in the sublist to the right of the current element. When the minimum value is found, it is swapped with the current element. This process is repeated until all elements have been swapped into their correct positions in the sorted sublist.
+The big O notation of this implementation of selection sort is O(n^2), because it has two nested loops that each iterate over the entire list. This means that the number of operations performed by the algorithm is proportional to the square of the size of the input list, which is considered to be inefficient for larger lists
+Selection sort was the next fastest after the shellsort.
+
+SHELLSORT
+This implementation of shell sort takes in an ArrayList of integers as a parameter and sorts it in ascending order. It does this by using a gap value to divide the list into sublists, and then sorting each sublist using insertion sort. It then reduces the gap value and repeats this process until the gap value is zero.
+To do this, the sort() method uses a while loop that continues as long as the gap value is greater than zero. In each iteration of the loop, it uses another for loop to sort each sublist using insertion sort. It then divides the gap value by two and repeats the process until the gap value is zero. This results in the list being sorted in ascending order.
+The time complexity of shell sort depends on the gap sequence used. In the example above, the gap sequence is n / 2, n / 4, n / 8, ..., 1, which results in a time complexity of O(n^(3/2)) in the worst case
+Shell sort was the next fastest
+
+BUBBLESORT
+This implementation of bubble sort takes in an ArrayList of integers as a parameter and sorts it in ascending order. It does this by repeatedly iterating over the list, comparing adjacent elements and swapping them if they are in the wrong order. This process continues until no more swaps are needed, indicating that the list is sorted.
+To do this, the sort() method uses a while loop that continues as long as any swaps were made in the previous iteration. In each iteration, it compares adjacent elements and swaps them if they are in the wrong order. When no more swaps are needed, the loop terminates and the list is sorted.
+The big O notation of this implementation of bubble sort is O(n^2), because it has two nested loops that each iterate over the entire list. This means that the number of operations performed by the algorithm is proportional to the square of the size of the input list, which is considered to be inefficient for larger lists
+O(n^2)takes longer to run than O(n log n) 
+The bubble sort was the slowest.
+
+MERGESORT
+This implementation of merge sort takes in an ArrayList of integers as a parameter and sorts it in ascending order. It does this by recursively dividing the list into smaller sublists until each sublist only contains one element. Then, it merges the sublists back together in a way that maintains their sorted order.
+To do this, the sort() method first checks if the list has a size of one or less. If it does, then the method returns because the list is already sorted. If the list has more than one element, then the method splits the list into two halves, sorts each half recursively using the sort() method, and then merges the two sorted halves back together using the merge() method. This results in the list being sorted in ascending order.
+The Big O notation for the implementation of my merge sort is O(n * log(n)).
+It's Big O notation is the same as that of the heapsort. 
+This is the standard time complexity for merge sort. This is because each recursive call splits the list in half, reducing the size of the problem by a factor of two. Since the list is divided in half log(n) times before it is sorted, the total time complexity is O(n * log(n)).
+The merge sort was the fastest.
+
+INSERTION SORT
+This implementation of insertion sort takes in an ArrayList of integers as a parameter and sorts it in ascending order. It does this by iterating over the list, starting from the second element, and inserting each element into its correct position in the sorted sublist to the left of the current element.
+To do this, it compares the current element with the elements in the sorted sublist to its left, and shifts these elements to the right to make room for the current element if it is smaller than the elements in the sorted sublist. When the correct position for the current element is found, it is inserted into the list. This process is repeated until all elements in the list have been inserted into their correct positions in the sorted sublist.
+The big O notation of this code is O(n^2) as it has a nested loop that iterates over the entire list.
+This was a little slow

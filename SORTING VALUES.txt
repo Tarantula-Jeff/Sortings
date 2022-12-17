@@ -1,0 +1,110 @@
+Jeffrey Ackah and Keil Barracliffe
+
+
+
+
+SORTS
+BUBBLESORT
+10000  values823 mi
+20000  values3338 mi
+30000  values7826 mi
+40000  values14812 mi
+50000  values21950 mi
+60000  values35389 mi
+70000  values51520 mi
+80000  values86951 mi
+90000  values86753 mi
+100000 values107165 mi
+
+SHELLSORT
+10000  values17 mi
+20000  values8 mi
+30000  values11 mi
+40000  values10 mi
+50000  values19 mi
+60000  values16 mi
+70000  values24 mi
+80000  values27 mi
+90000  values39 mi
+100000 values27 mi
+
+SELECTIONSORT
+10000 values73 mi
+20000 values265 mi
+30000 values508 mi
+40000 values1052 mi
+50000 values1671 mi
+60000 values2410 mi
+70000 values3516 mi
+80000 values4703 mi
+90000 values3271 mi
+100000 values7697 mi
+
+MERGESORT
+
+10000  values15 mi
+20000  values38 mi
+30000  values20 mi
+40000  values27 mi
+50000  values38 mi
+60000  values41 mi
+70000  values24 mi
+80000  values37 mi
+90000  values61 mi
+100000 values70 mi
+
+
+INSERTIONSORT
+
+10000  values  72 mi
+20000  values  288 mi
+30000  values  541 mi
+40000  values  1785 mi
+50000  values  2931 mi
+60000  values  3289 mi
+70000  values  6029 mi
+80000  values  8690 mi
+90000  values  6476 mi
+100000 values  7014 mi
+
+
+HEAPSORT
+10000  values17 mi
+20000  values13 mi
+30000  values23 mi
+40000  values30 mi
+50000  values36 mi
+60000  values40 mi
+70000  values76 mi
+80000  values64 mi
+90000  values52 mi
+100000 values58 mi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
