@@ -10,22 +10,18 @@ import java.util.ArrayList;
  *
  * @author JEFFREY ACKAH AND Keil Barracliffe
  */
+  import java.util.ArrayList;
+
 public class Sorting {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-
         Sort testing = new Sort();
         for (int i = 10000; i <= 100000; i += 10000) {
             ArrayList<Integer> list = testing.fillRandom(i, 100000);
             long start = System.currentTimeMillis();
             testing.selectionSort(list);
             long end = System.currentTimeMillis();
-            System.out.println(i + "values" + (end - start) + " mi");
+            System.out.println(i + " values sorted in " + (end - start) + " ms");
         }
     }
-
 }
